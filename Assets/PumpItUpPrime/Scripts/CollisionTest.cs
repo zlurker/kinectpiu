@@ -8,10 +8,6 @@ public class CollisionTest : MonoBehaviour {
 	// Use this for initialization
 	
     void OnCollisionStay2D(Collision2D coll) {
-        stepchartMover.CheckNormalBeats(beatTypeToCheck);
-    }
-
-    void OnCollisionExit2D(Collision2D coll) {
-        stepchartMover.holdingDown[beatTypeToCheck] = 0;
+        stepchartMover.BeatInput(2,beatTypeToCheck);
     }
 }

@@ -1959,7 +1959,8 @@ public class KinectManager : MonoBehaviour
 
 	void Awake()
 	{
-		// set the singleton instance
+        // set the singleton instance
+        PlayerPref.sceneValueOffset++;
 		instance = this;
 
 		try
